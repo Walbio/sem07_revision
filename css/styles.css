@@ -11,18 +11,277 @@ html {
     box-sizing: inherit;
 }
 
-/*--------------------------------------------------------------
-ELEMENT
---------------------------------------------------------------*/
+.wrapper{
+    margin: 0 auto;
+    max-width: 1171px;
+    height: 100%;
+}
 
+/*--------------------------------------------------------------
+HEADER
+--------------------------------------------------------------*/
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 header a{
     font: 700 2.4rem 'Merriweather', sans-serif;
+    color: black;
 }
 
-header li a{
+header ul a{
     font: 700 1.8rem "Roboto", sans-serif;
     text-decoration: none;
-    list-style: none;
+    color: black;
+}
+
+header ul {
+    list-style:none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header ul a:hover{
+    color: white;
+}
+
+.Billets{
+    display: flex;
+    font: 700 1.8rem "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+    height: 36px;
+    width: 111px;
+    background-color: white;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+header{
+    background-color: #379AE3;
+    height: 66px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+/*--------------------------------------------------------------
+HERO
+--------------------------------------------------------------*/
+
+.hero .wrapper{
+    position: relative;
+}
+
+.hero{
+    margin-top: 66px;
+    background-image: url(../images/hero.png);
+    height: 637px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenu{
+    background-color: rgba(0, 0, 0, 70%);
+    height: 437px;
+    width: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.contenu h1{
+    font: 700 6.4rem 'Merriweather', sans-serif;
+    color: #E67522;
+    text-align: center;
+    margin: 0;
+}
+
+.contenu p{
+    font: 700 2.0rem "Roboto", sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.contenu a{
+    display: flex;
+    font: 700 1.8rem "Roboto", sans-serif;
+    color: white;
+    height: 36px;
+    width: 350px;
+    background-color: #E67522;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+TEXTE ARTICLES
+--------------------------------------------------------------*/
+
+.titre h2{
+    font: 700 6.4rem 'Merriweather', sans-serif;
+    line-height: 115%;  
+    color: black;
+    margin: 0;
+    padding-top: 100px
+}
+
+.titre p{
+    font: 400 1.8rem "Roboto", sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    width: 800px;
+    padding-bottom: 70px;
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuits{
+    background-color: #E6EDF1;
+}
+
+/*--------------------------------------------------------------
+ARTICLES
+--------------------------------------------------------------*/
+
+.articles{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    height: 785px;
+    width: 370px;
+    background-color: #FFFFFF;
+}
+
+article h2{
+    font: 700 3.6rem 'Merriweather', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+article p{
+    font: 400 1.8rem "Roboto", sans-serif;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bouton a{
+    display: flex;
+    font: 700 1.8rem "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+    height: 42px;
+    width: 153px;
+    background-color: #E67522;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.bouton{
+    margin-top: auto;
+    padding-bottom: 38px;
+}
+
+/*--------------------------------------------------------------
+FOOTER
+--------------------------------------------------------------*/
+
+footer{
+    background-color: #CCDAE3;
+    height: 270px;
+}
+
+.icone span{
+    font-size: 5.0rem;
+    color: white;
+    display: flex;
+    height: 90px;
+    width: 90px;
+    background-color: #E67522;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+footer p{
+    margin: 0;
+    font: 400 1.4rem "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.medsociaux{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 
+
+
+/*--------------------------------------------------------------
+SECTION MODALE
+--------------------------------------------------------------*/
+
+
+.zoom {
+    width: 800px;
+    height: 600px;
+    cursor: pointer;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 5.0rem "Roboto", sans-serif;
+  }  
+
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modale.visible {
+    display: flex;
+  }
+  
