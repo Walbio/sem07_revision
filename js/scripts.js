@@ -12,3 +12,4 @@ function openModale(){
 function closeModale(event){
     modale.classList.remove('visible');
 }
+//FIN JS
