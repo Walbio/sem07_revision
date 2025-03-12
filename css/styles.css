@@ -14,3 +14,15 @@ html {
 /*--------------------------------------------------------------
 ELEMENT
 --------------------------------------------------------------*/
+
+header a{
+    font: 700 2.4rem 'Merriweather', sans-serif;
+}
+
+header li a{
+    font: 700 1.8rem "Roboto", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
